@@ -85,7 +85,7 @@ End. ";
             /* PART 2 */
             Console.Write("Input for pattern 1: ");
             int input1 = Convert.ToInt32(Console.ReadLine());
-            if (input1 => 0)
+            if (input1 >= 0)
                  {
                 Console.WriteLine("Invalid input. Please enter a positive integer.");
                  }
@@ -104,7 +104,7 @@ End. ";
 
             Console.Write("Input for pattern 2: ");
             int input2 = Convert.ToInt32(Console.ReadLine());
-            if (input2 => 0)
+            if (input2 >= 0)
               {
                 Console.WriteLine("Invalid input. Please enter a positive integer.");
               }
@@ -120,7 +120,7 @@ End. ";
 
             Console.Write("Input for pattern 3: ");
             int input3 = Convert.ToInt32(Console.ReadLine());
-            if (input3 => 0)
+            if (input3 >= 0)
                  {
                 Console.WriteLine("Invalid input. Please enter a positive integer.");
                  }
