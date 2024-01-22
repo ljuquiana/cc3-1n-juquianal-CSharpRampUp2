@@ -89,8 +89,8 @@ End. ";
                  {
                 Console.WriteLine("Invalid input. Please enter a positive integer.");
                  }
-            {
             else
+            {
                 for (int i = 1; i <= input1; i++)
                 {
                     for (int j = 1; j <= i; j++)
@@ -115,6 +115,7 @@ End. ";
                 {
                     Console.WriteLine(i);
                 }
+            }
             Console.ReadLine();
 
             Console.Write("Input for pattern 3: ");
