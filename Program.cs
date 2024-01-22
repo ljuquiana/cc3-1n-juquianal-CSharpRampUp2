@@ -85,8 +85,12 @@ End. ";
             /* PART 2 */
             Console.Write("Input for pattern 1: ");
             int input1 = Convert.ToInt32(Console.ReadLine());
-            if (input1 > 0)
+            if (input1 => 0)
+                 {
+                Console.WriteLine("Invalid input. Please enter a positive integer.");
+                 }
             {
+            else
                 for (int i = 1; i <= input1; i++)
                 {
                     for (int j = 1; j <= i; j++)
@@ -96,31 +100,30 @@ End. ";
                     Console.WriteLine();
                 }
             }
-            else
-            {
-                Console.WriteLine("Invalid input. Please enter a positive integer.");
-            }
             Console.ReadLine();
 
             Console.Write("Input for pattern 2: ");
             int input2 = Convert.ToInt32(Console.ReadLine());
-            if (input2 > 0)
+            if (input2 => 0)
+              {
+                Console.WriteLine("Invalid input. Please enter a positive integer.");
+              }
+            else
             {
                 Console.WriteLine($"Counting from 1 to {input2}:");
                 for (int i = 1; i <= input2; i++)
                 {
                     Console.WriteLine(i);
                 }
-            }
-            else
-            {
-                Console.WriteLine("Invalid input. Please enter a positive integer.");
-            }
             Console.ReadLine();
 
             Console.Write("Input for pattern 3: ");
             int input3 = Convert.ToInt32(Console.ReadLine());
-            if (input3 > 0)
+            if (input3 => 0)
+                 {
+                Console.WriteLine("Invalid input. Please enter a positive integer.");
+                 }
+            else
             {
                 for (int i = input3; i >= 1; i--)
                 {
@@ -130,10 +133,6 @@ End. ";
                     }
                     Console.WriteLine();
                 }
-            }
-            else
-            {
-                Console.WriteLine("Invalid input. Please enter a positive integer.");
             }
             Console.ReadLine();
         }
