@@ -102,21 +102,22 @@ End. ";
             }
             Console.ReadLine();
 
+            
             Console.Write("Input for pattern 2: ");
-            int input2 = Convert.ToInt32(Console.ReadLine());
-            if (input2 <= 0)
-              {
-                Console.WriteLine("Invalid input. Please enter a positive integer.");
-              }
-            else
+            if (int.TryParse(Console.ReadLine(), out int input2) && input2 > 0)
             {
-                Console.WriteLine($"Counting from 1 to {input2}:");
-                for (int i = 1; i <= input2; i++)
-                {
-                    Console.WriteLine(i);
-                }
-            }
-            Console.ReadLine();
+              int sum = 0;
+              for (int i = 1; i <= input2; i++)
+             {
+                sum += i;
+             }
+             Console.WriteLine($"The sum of numbers from 1 to {userInput} is: {sum}");
+           }
+           else
+           {
+            Console.WriteLine("Invalid input. Please enter a positive integer.");
+           }
+           Console.ReadLine(); 
 
             Console.Write("Input for pattern 3: ");
             int input3 = Convert.ToInt32(Console.ReadLine());
