@@ -111,7 +111,7 @@ End. ";
              {
                 sum += i;
              }
-             Console.WriteLine($"The sum of numbers from 1 to {userInput} is: {sum}");
+             Console.WriteLine($"The sum of numbers from 1 to {input2} is: {sum}");
            }
            else
            {
