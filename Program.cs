@@ -104,19 +104,19 @@ End. ";
 
             
             Console.Write("Input for pattern 2: ");
-            if (int.TryParse(Console.ReadLine(), out int input2) && input2 > 0)
-            {
-              int sum = 0;
-              for (int i = 1; i <= input2; i++)
-             {
-                sum += i;
-             }
-             Console.WriteLine($"The sum of numbers from 1 to {input2} is: {sum}");
-           }
+            if (int.TryParse(Console.ReadLine(), out int input2) && input2 <= 0)
+                {
+                Console.WriteLine("Invalid input. Please enter a positive integer.");
+                }
            else
-           {
-            Console.WriteLine("Invalid input. Please enter a positive integer.");
-           }
+                {
+                 int sum = 0;
+                 for (int i = 1; i <= input2; i++)
+                   {
+                   sum += i;
+                   }
+                 Console.WriteLine($"The sum of numbers from 1 to {input2} is: {sum}");
+                }
            Console.ReadLine(); 
 
             Console.Write("Input for pattern 3: ");
