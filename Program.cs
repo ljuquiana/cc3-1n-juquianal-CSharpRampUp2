@@ -27,22 +27,51 @@ namespace CSharpRampUp2
             Console.WriteLine("====================================");
 
             /* Age */
-            int[] studentAges = new int[10];
+            int Student1;
+            int Student2;
+            int Student3;
+            int Student4;
+            int Student5;
+            int Student6;
+            int Student7;
+            int Student8;
+            int Student9;
+            int Student10;
+
             Console.WriteLine("====================================");
-            for (int i = 0; i < 10; i++)
-            {
-                Console.Write($"Age of Student {i + 1}: ");
-                studentAges[i] = Convert.ToInt32(Console.ReadLine());
-            }
+            Console.Write("Age of Student 1: ");
+            Student1 = Convert.ToInt32(Console.ReadLine());
 
-            int total = 0;
-            foreach (int age in studentAges)
-            {
-                total += age;
-            }
+            Console.Write("Age of Student 2: ");
+            Student2 = Convert.ToInt32(Console.ReadLine());
 
-            double averageAge = (double)total / 10;
-            Console.WriteLine($"The average age of students is: {averageAge}");
+            Console.Write("Age of Student 3: ");
+            Student3 = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Age of Student 4: ");
+            Student4 = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Age of Student 5: ");
+            Student5 = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Age of Student 6: ");
+            Student6 = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Age of Student 7: ");
+            Student7 = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Age of Student 8: ");
+            Student8 = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Age of Student 9: ");
+            Student9 = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Age of Student 10: ");
+            Student10 = Convert.ToInt32(Console.ReadLine());
+
+            int total = Student1 + Student2 + Student3 + Student4 + Student5 + Student6 + Student7 + Student8 + Student9 + Student10;
+            double average_age = (double)total / 10;
+            Console.WriteLine($"The average age of students is: {average_age}");
             Console.WriteLine("====================================");
 
             /* Story */
